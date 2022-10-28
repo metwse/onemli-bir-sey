@@ -21,7 +21,7 @@ form.onsubmit = async e => {
 	if (!form.message.value) return messagebox('OHA', 'boş<wbr>MESAJ<wbr>'.repeat(30), 'özür', '')
 	if (!form.name.value) return messagebox('OHA', 'ad<wbr>YOK<wbr>'.repeat(30), 'özür', '')
 	link = `https://önemlibişey.metw.cc/${encodeURIComponent(form.name.value)}?${utb(form.message.value)}`
-	if (await messagebox('başarılı', `Bağlantı oluşturuldu. <code>${link}</code>Alternatif bağlantı: <code>https://onemlibisey.metw.cc/${encodeURIComponent(form.name.value)}?${utb(form.message.value)}</code>`, 'paylaş', 'iptal')) navigator.share({ text: `${form.name.value}! BAKKK`, url: link })
+	if (await messagebox('başarılı', `Bağlantı oluşturuldu. <code>${link}</code>Alternatif bağlantı: <code>https://onemlibisey.metw.cc/${encodeURIComponent(form.name.value)}?${utb(form.message.value)}</code>`, 'paylaş', 'iptal')) navigator.share({ text: `${form.name.value}! BAKKK, ${link}` })
 }
 
 const messagebox = async (title, content, ok, cancel) => {
