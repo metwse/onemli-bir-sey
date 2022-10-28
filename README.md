@@ -1,8 +1,8 @@
 # önemli bir şey
-Evet.
+Evet
 
 ## SSS
-**neden**  
+**neden?**  
 Bilmiyorum
 
 **iyi misin?**  
